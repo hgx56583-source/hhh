@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的视频网站</title>
+    <style>
+        body {
+            font-family: "Arial", "PingFang SC", "Microsoft YaHei", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+        }
+        header {
+            background: #23272a;
+            color: #fff;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 2em;
+        }
+        nav {
+            background: #40464d;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-size: 1.1em;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 24px auto;
+            padding: 0 24px;
+        }
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+        }
+        .video-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 11px #0001;
+            padding: 16px;
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-card video, .video-card iframe {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .video-title {
+            font-weight: bold;
+            margin-bottom: 7px;
+            font-size: 1.15em;
+        }
+        .video-desc {
+            color: #555;
+            font-size: 0.96em;
+        }
+        footer {
+            background: #23272a;
+            color: #fff;
+            text-align: center;
+            padding: 14px 0;
+            margin-top: 36px;
+            font-size: 0.92em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        我的免费视频网站
+    </header>
+    <nav>
+        <a href="#">首页</a>
+        <a href="#">最新视频</a>
+        <a href="#">分类</a>
+        <a href="#">关于我们</a>
+    </nav>
+    <div class="container">
+        <h2>热门推荐</h2>
+        <div class="videos">
+            <div class="video-card">
+                <video controls poster="https://www.w3schools.com/html/pic_trulli.jpg">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    您的浏览器不支持 video 标签。
+                </video>
+                <div class="video-title">示例视频 1</div>
+                <div class="video-desc">一段公开示例视频，清晰展示 HTML Video 用法。</div>
+            </div>
+            <div class="video-card">
+                <video controls poster="https://www.w3schools.com/html/img_girl.jpg">
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    您的浏览器不支持 video 标签。
+                </video>
+                <div class="video-title">示例视频 2</div>
+                <div class="video-desc">又一段公开示例，自定义封面和说明。</div>
+            </div>
+            <!-- 可以继续添加更多视频卡片 -->
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 我的免费视频网站 | 欢迎访问我们的社区
+    </footer>
+</body>
+</html>
