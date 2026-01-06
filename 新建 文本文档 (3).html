@@ -1,231 +1,87 @@
-<p style=color:red ;font-size:20px;>hhhh这是<br>一个演示</p>
-
-<div>hhh</div>
-<i>hh</i>
-<br>
-<b>ww</b>
-<br>
-<u>xy</u>
-<br>
-<h1>fff<sub>下标</sub><sup>上标</sup></h1>
-<br>
-<p>使用 <code>console.log()</code> 可以打印信息。</p>
-
-<address>
-    <a href="mailto:wanwanxueyun@gmail.com?subject=来自爸爸网站的合作请求&body=请填写您的姓名和项目需求:%0A">
-        发送合作邮件
-    </a>
-</address>
-
-<code>print("Hello, World!")</code>
-<div>print("Hello, World!")</div>
-<p>print("Hello, World!")</p>
-<p>hello, world!<q>这是一个引用</q></p>
-
-<address>
-    <a href="mailto:wanwanxueyun@gmail.com?subject=来自爸爸网站的合作请求&body=请填写您的姓名和项目需求:%0A">
-        发送合作邮件
-    </a>
-</address>
-
-<p>
-    <a href="https://order.jd.com/center/list.action">百度</a>
-</p>
-
-<a href="https://www.jd.com">京东</a><br>
-
-<a href="https://www.example.com" target="_blank" rel="noopener">新窗口打开Example</a>
-
-
-<a href="https://www.example.com" title="访问 Example 网站">访问 Example</a>
-<br>
-
-
-<a href="https://www.jd.com" target="_blank" pel="noopener">京东</a>
-
-
-<a href="https://www.example.com" class="external-link">外部链接</a>
-
-
-<a href="https://www.jd.com" style="color:red" target="_blank" rel="noopener">京东</a>
-
-
-
-<a id="tips">有用的提示部分</a>
-
-<a href=#>回到顶部</a>
-
-<a href="C:\Users\qwe12\OneDrive\Desktop\100种Python函数.docx" download>下载文档</a>
-
-
-<a href="#section2">跳转到第二部分</a>
-<!-- 在页面中的某个位置 -->
-<a name="section2"></a>
-
-<p style="color:blue;margin-left:20px;">这是一个段落。</p>
-
-<body style="background-color:rgb(27, 236, 97)"></body>
-
-<!-- 插入本地图片
-<img src="C:\Users\qwe12\OneDrive\图片\Camera Roll\微信图片_20250918173146_174_219.png" alt="">
-
-
-
-<h4>表格</h4>
-    <body>
-<table border="5">
-    <tr>
-    <td style="color:red">100</td>
-    </tr>
-</table>
-
-
-
-<h4>有序列表</h4>
-<table border="10">
-    <tr>
-        <td>100</td>
-        <td>200</td>
-        <td>300</td>
-    </tr>
-<table>
-
-
-<p>这是一个<span style="color:rgb(52, 13, 225)">蓝色</span>段落</p>
-
-<div style="color:rgb(217, 10, 72)">
-<ol>
-    <li>第一项</li>
-    <li>第二项</li>
-    <li>第三项</li>
-</ol>
-</div>
-
-
-<form>
-    名字:<input type="text" name="username"><br>
-    密码:<input type="text" name="password">
-    <input type="submit" value="提交">
-</form>-->
-
-<br>
-<form>
-     <input type="checkbox" name="vehicle" value="bike" style="accent-color:tomato">
-     <babel style="color:brown">我喜欢你</babel>
-    </form>
-
-<fieldset>
-    <legend>个人信息</legend>       
-名字:<input type="text" name="username"><br>
-密码:<input type="text" name="password">
-<input type="submit" value="提交">
-</fieldset>
-
-
-<!--<embed height="150" width="100" src="D:\xwechat_files\wxid_bykvc4nyhjbm22_e717\msg\file\2025-11\周杰伦 - 晴天.wav">-->
-
-
-<a href="D:\xwechat_files\wxid_bykvc4nyhjbm22_e717\msg\file\2025-11\周杰伦 - 晴天.wav">晴天</a>
-<br>
-<table border="1">
-    <tr>
-    <th>1</th>
-    <td>3</td>
-    </tr>
-</table>
-
-<ol style="color:rgb(213, 7, 28)">哈哈哈</ol>
-<ul>嘻嘻嘻</ul>
-<li>嘿嘿嘿</li>
-<dl>噜噜噜</dl>
-<dt>咕咕咕</dt>
-<dd>哼哼哼</dd>
-
-<p>我喜欢<span style="color:brown" >你</span>嘻嘻</p>
-
-
-<html>
-    <head>
-        <meta charset="utf-8">
-            <title>标题</title>
-    </head>
-    <body>
-        <div id="container" style="width: 500px;">
-        <div style="background-color:yellow; height:10px"></div>
-
-    </body>
-</html>
-
-
-
-
-<form>
-    <input type="checkbox" name="vehicle" value="bike">我喜欢自行车<br>
-</form>
-
-
-<form>  
-    <input type="checkbox" name="vehicle"  value="car" style="color:blue">我喜欢汽车<br>
-</form>
-
+```html
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>简单视频网站（MVP）</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width:900px; margin: 20px auto; padding:0 16px; }
+    header { display:flex; justify-content:space-between; align-items:center; }
+    video { max-width:100%; height:auto; background:#000; }
+    .video-item { margin: 12px 0; padding:8px; border:1px solid #eee; border-radius:6px; }
+    form { margin:12px 0; }
+  </style>
+</head>
 <body>
+  <header>
+    <h1>简单视频网站（MVP）</h1>
+    <div><small>本地演示 - Node.js + Express</small></div>
+  </header>
 
-<button type="button" onclick="alert('你好，世界')">提交</button>
-    </body>
-    <br>
-<iframe src="url"></iframe>
+  <section>
+    <h2>上传视频（仅允许 mp4 / webm / ogg / mov）</h2>
+    <form id="uploadForm" method="post" action="/upload" enctype="multipart/form-data">
+      <input type="file" name="video" accept="video/*" required />
+      <button type="submit">上传</button>
+    </form>
+  </section>
 
+  <section>
+    <h2>视频列表</h2>
+    <div id="videos">正在加载…</div>
+  </section>
 
-<iframe src="https://www.baidu.com"
-    width="500"
-    height="500" >
-    </iframe>
-<h1><a style="color:aqua">hhh </a></h1>
+  <template id="tpl">
+    <div class="video-item">
+      <div><strong class="name"></strong> <small class="size"></small></div>
+      <video controls preload="metadata">
+        <source class="src" type="video/mp4" />
+        你的浏览器不支持 video 标签。
+      </video>
+    </div>
+  </template>
 
-<button type="button" onclick="alert('你好，世界')">提交</button>
+  <script>
+    function formatSize(n) {
+      if (n < 1024) return n + ' B';
+      if (n < 1024*1024) return (n/1024).toFixed(1) + ' KB';
+      if (n < 1024*1024*1024) return (n/1024/1024).toFixed(1) + ' MB';
+      return (n/1024/1024/1024).toFixed(2) + ' GB';
+    }
 
+    async function load() {
+      try {
+        const res = await fetch('/api/videos');
+        const list = await res.json();
+        const container = document.getElementById('videos');
+        container.innerHTML = '';
+        if (list.length === 0) container.textContent = '暂无视频，先上传一个试试。';
+        list.forEach(v => {
+          const tpl = document.getElementById('tpl').content.cloneNode(true);
+          tpl.querySelector('.name').textContent = v.name;
+          tpl.querySelector('.size').textContent = formatSize(v.size);
+          const src = tpl.querySelector('.src');
+          src.src = v.url; // /video/<filename>
+          // set type dynamically based on filename extension
+          const ext = v.name.split('.').pop().toLowerCase();
+          if (ext === 'webm') src.type = 'video/webm';
+          else if (ext === 'ogg' || ext === 'ogv') src.type = 'video/ogg';
+          else if (ext === 'mov') src.type = 'video/quicktime';
+          else src.type = 'video/mp4';
+          container.appendChild(tpl);
+        });
+      } catch (err) {
+        document.getElementById('videos').textContent = '加载失败：' + err;
+      }
+    }
 
-<a href="#tips">回到顶部</a>
-
-<img src="C:\Users\yuwenxin\Pictures\Camera Roll\WIN_20251218_12_44_15_Pro.jpg" height="50%" width="100%">
-
-<a href="C:\Users\yuwenxin\Music\周杰伦 - 晴天.flac">晴天</a>
-
-<ul>
-    <li>项目一</li>
-    <li>项目二</li>
-    <li>项目三</li>
-</ul>
-<ol>
-    <li>第一项</li>
-    <li>第二项</li>
-    <li>第三项</li>
-</ol>
-
-<dl>
-    <dt>术语一</dt>
-    <dd>术语一的定义。</dd>
-    <dt>术语二</dt>
-    <dd>术语二的定义。</dd>
-</dl>
-
-<kbd>这是一个键盘输入示例</kbd>
-<br>
-
-<table border="1">
-    <tr>
-    <th>标题1</th>
-    <th>标题2</th>
-    </tr>
-    <tr>
-    <td>数据1</td>
-    <td>数据2</td>
-    </tr>
-</table>
-<br>
-名字<input type="text"> 
-密码<input type="password">
-<input type="reset" value="重置">
-<br>
-
+    load();
+    // optional: refresh after upload
+    document.getElementById('uploadForm').addEventListener('submit', () => {
+      setTimeout(load, 1200);
+    });
+  </script>
+</body>
+</html>
 
